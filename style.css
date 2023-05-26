@@ -1,3 +1,7 @@
+
+
+
+
 *{
     margin:0;
     padding:0;
@@ -16,7 +20,7 @@ body{
     max-width: 600px;
     min-height: 20rem;
     background: hsl(0, 0%, 100%);
-    padding:2rem 10px;
+    padding:5px 10px;
     padding-left: 40px;
     width: 100%;
     border-radius: 20px 20px 100px 20px;
@@ -31,7 +35,7 @@ body{
     grid-template-columns: repeat(3,100px);
     align-items: center;
     gap: 3rem;
-    padding:40px 0;
+    padding:30px 0;
 }
 
 .dayofb-container .input-container{
@@ -56,6 +60,9 @@ body{
 .input-container  label{
     font-size: 13px;
     letter-spacing: 3px;
+    color: hsl(0, 1%, 44%);
+    letter-spacing: 4px;
+    font-weight: bold;
 }
 
 .input-container input{
@@ -67,6 +74,7 @@ body{
     outline: none;
     font-weight: bold;
     padding-left:20px;
+    background: hsl(0, 0%, 100%);
 }
 
 .push-container{
@@ -108,10 +116,12 @@ button img{
 .output-display{
     display: flex;
     align-items: center;
-    gap:30px;
-    font-size: 35px;
+    gap:5px;
     margin-left: 20px;
     width: 100%;
+    font-size: 35px;
+    font-weight: 900;
+    
 }
 
 
@@ -126,12 +136,16 @@ button img{
 
 
 
-.Age-display .output-display h2{
-    font-size: 50px;
+.Age-display .output-display .Calcul-now{
+
     letter-spacing: 5px;
     color:hsl(259, 100%, 65%);
     font-weight: bold;
-    padding:10px;
+    
+}
+
+.hr-display{
+    display: none;
 }
 
 
@@ -162,7 +176,8 @@ button img{
         max-width: 280px;
     }
     .output-display{
-        font-size: 18px; 
+        font-size: 25px;
+        margin-left: 0px; 
     }
     
     .input-container input{
@@ -174,11 +189,19 @@ button img{
     }
 
 
-.dayofb-container .input-container p{
-    width: 70px;
-    font-size: 10px;
-    margin-top: 10px;
-}
+    .dayofb-container .input-container p{
+        width: 70px;
+        font-size: 10px;
+        margin-top: 10px;
+    }
+.push-container hr{
+    flex: 0.5;
+    color: hsl(0, 0%, 86%)
+    }
+
+    .hr-display{
+    display: inline;
+    }
 }
 
 
@@ -206,4 +229,6 @@ button img{
     .input-container input{
         font-size: 15px;
     }
+
+   
 }
