@@ -54,29 +54,17 @@ display_year.addEventListener("input", function() {
         for (i=0;i<text_label.length;i++){
             text_label[i].classList.add('color_warning')
             display_year.classList.add("input-border")
-            display_month.classList.add("input-border")
-            display_day.classList.add('input-border')
             warning_year.innerHTML="Must be in the past"
-            warning_month.innerHTML="Must be a valid month"
-            warning_day.innerHTML="Must be a valid day"
             warning_year.classList.add('color_warning')
-            warning_month.classList.add('color_warning')
-            warning_day.classList.add('color_warning')
-
+            
         }
     }else{
         for (i=0;i<text_label.length;i++){
             text_label[i].classList.remove('color_warning')
             display_year.classList.remove("input-border")
-            display_month.classList.remove("input-border")
-            display_day.classList.remove('input-border')
             warning_year.innerHTML=""
-            warning_month.innerHTML=""
-            warning_day.innerHTML=""
             warning_year.classList.remove('color_warning')
-            warning_month.classList.remove('color_warning')
-            warning_day.classList.remove('color_warning')
-        }
+       }
     
     } 
       
@@ -95,29 +83,16 @@ display_month.addEventListener("input", function() {
     if (!isDateValid(year, month, day)) {
         for (i=0;i<text_label.length;i++){
             text_label[i].classList.add('color_warning')
-            display_year.classList.add("input-border")
             display_month.classList.add("input-border")
-            display_day.classList.add('input-border')
-            warning_year.innerHTML="Must be in the past"
             warning_month.innerHTML="Must be a valid month"
-            warning_day.innerHTML="Must be a valid day"
-            warning_year.classList.add('color_warning')
             warning_month.classList.add('color_warning')
-            warning_day.classList.add('color_warning')
-
         }
     }else{
         for (i=0;i<text_label.length;i++){
             text_label[i].classList.remove('color_warning')
-            display_year.classList.remove("input-border")
             display_month.classList.remove("input-border")
-            display_day.classList.remove('input-border')
-            warning_year.innerHTML=""
             warning_month.innerHTML=""
-            warning_day.innerHTML=""
-            warning_year.classList.remove('color_warning')
             warning_month.classList.remove('color_warning')
-            warning_day.classList.remove('color_warning')
         }
     
     } 
@@ -142,28 +117,16 @@ display_day.addEventListener("input", function() {
     if (!isDateValid(year, month, day)) {
         for (i=0;i<text_label.length;i++){
             text_label[i].classList.add('color_warning')
-            display_year.classList.add("input-border")
-            display_month.classList.add("input-border")
             display_day.classList.add('input-border')
-            warning_year.innerHTML="Must be in the past"
-            warning_month.innerHTML="Must be a valid month"
             warning_day.innerHTML="Must be a valid day"
-            warning_year.classList.add('color_warning')
-            warning_month.classList.add('color_warning')
             warning_day.classList.add('color_warning')
 
         }
     }else{
         for (i=0;i<text_label.length;i++){
             text_label[i].classList.remove('color_warning')
-            display_year.classList.remove("input-border")
-            display_month.classList.remove("input-border")
             display_day.classList.remove('input-border')
-            warning_year.innerHTML=""
-            warning_month.innerHTML=""
             warning_day.innerHTML=""
-            warning_year.classList.remove('color_warning')
-            warning_month.classList.remove('color_warning')
             warning_day.classList.remove('color_warning')
         }
     
